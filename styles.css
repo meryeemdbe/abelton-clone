@@ -1,0 +1,65 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #F3F3F3;
+  font-family: futura-pt, Avenir, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+#header {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+#nav-bar-left > ul {
+  position: absolute;
+  left:0;
+}
+#nav-bar-right > ul, #nav-bar-left > ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  font-weight: 800;
+}
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 20px;
+    padding: 30px;
+ 
+}
+#about-abelton-img {
+    /* margin-left: auto;
+    margin-right: auto; */
+    width: 80%;
+    object-fit: cover;
+}
+#about-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    padding: 30px;
+
+}
+#about > #about-abelton-img {
+    position: relative;
+    
+}
+.page-about__header__ableton-logo {
+    position: absolute;
+    top: 100px;
+}
